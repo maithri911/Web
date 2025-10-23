@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SMVITM Event Registration Form</title>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff;
+    margin: 20px;
+}
+h1 {
+    text-align: center;
+    color: #003366;
+    font-size: 34px;
+    margin-bottom: 10px;
+}
+h2 {
+    text-align: center;
+    color: #0066cc;
+    margin-bottom: 25px;
+    font-weight: normal;
+}
+table {
+    width: 65%;
+    margin: 0 auto;
+    background-color: #fff;
+    border-collapse: collapse;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+td {
+    padding: 15px;
+    font-size: 18px;
+    color: #333;
+}
+th {
+    text-align: left;
+    padding: 15px;
+    background-color: #003366;
+    color: white;
+    font-size: 20px;
+}
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+input[type="submit"],
+input[type="reset"] {
+    background-color: #0066cc;
+    color: white;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 18px;
+    margin: 5px;
+}
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+    background-color: #004c99;
+}
+textarea {
+    resize: vertical;
+    height: 100px;
+}
+.radio, .checkbox {
+    width: auto;
+    margin-right: 10px;
+}
+footer {
+    text-align: center;
+    margin-top: 30px;
+    color: #555;
+    font-size: 14px;
+}
+</style>
+</head>
+<body>
+
+<h1>Shri Madhwa Vadiraja Institute of Technology & Management</h1>
+<h2>Event Registration Form</h2>
+
+<form action="#" method="post">
+<table>
+    <tr>
+        <th colspan="2">Participant Information</th>
+    </tr>
+    <tr>
+        <td>Full Name:</td>
+        <td><input type="text" name="fullname" placeholder="Enter your full name" required></td>
+    </tr>
+    <tr>
+        <td>Email:</td>
+        <td><input type="email" name="email" placeholder="Enter your email" required></td>
+    </tr>
+    <tr>
+        <td>Phone Number:</td>
+        <td><input type="tel" name="phone" placeholder="Enter your phone number" required></td>
+    </tr>
+    <tr>
+        <td>Gender:</td>
+        <td>
+            <input type="radio" name="gender" value="male" class="radio"> Male
+            <input type="radio" name="gender" value="female" class="radio"> Female
+            <input type="radio" name="gender" value="other" class="radio"> Other
+        </td>
+    </tr>
+    <tr>
+        <td>Department:</td>
+        <td><input type="text" name="department" placeholder="Enter your department (e.g., CSE, ECE, ME, CIVIL)" required></td>
+    </tr>
+    <tr>
+        <td>Year of Study:</td>
+        <td>
+            <select name="year" required>
+                <option value="">-- Select Year --</option>
+                <option value="1st Year">1st Year</option>
+                <option value="2nd Year">2nd Year</option>
+                <option value="3rd Year">3rd Year</option>
+                <option value="4th Year">4th Year</option>
+            </select>
+        </td>
+    </tr>
+    <tr>
+        <td>Event Name:</td>
+        <td>
+            <select name="event" required>
+                <option value="">-- Select Event --</option>
+                <option value="coding">Coding Competition</option>
+                <option value="quiz">Quiz Challenge</option>
+                <option value="dance">Dance Battle</option>
+                <option value="singing">Singing Contest</option>
+                <option value="sports">Sports Meet</option>
+                <option value="poster">Poster Presentation</option>
+                <option value="project">Project Exhibition</option>
+            </select>
+        </td>
+    </tr>
+    <tr>
+        <td>Skills/Interests:</td>
+        <td>
+            <input type="checkbox" name="skills" value="leadership" class="checkbox"> Leadership
+            <input type="checkbox" name="skills" value="creativity" class="checkbox"> Creativity
+            <input type="checkbox" name="skills" value="teamwork" class="checkbox"> Teamwork
+            <input type="checkbox" name="skills" value="communication" class="checkbox"> Communication
+        </td>
+    </tr>
+    <tr>
+        <td>Address:</td>
+        <td><textarea name="address" placeholder="Enter your address"></textarea></td>
+    </tr>
+    <tr>
+        <td colspan="2" style="text-align:center;">
+            <input type="submit" value="Register">
+            <input type="reset" value="Reset">
+        </td>
+    </tr>
+</table>
+</form>
+
+<footer>
+    © 2025 SMVITM, Bantakal | All Rights Reserved
+</footer>
+
+</body>
+</html>
