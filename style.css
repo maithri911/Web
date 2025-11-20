@@ -1,141 +1,158 @@
-
+/* Reset and base styles */
 * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
- box-sizing: border-box;
+body {
+    font-family: 'Roboto', 'Segoe UI', Arial, sans-serif;
+    background: #f5f7fa;
+    color: #1f2937;
+    line-height: 1.6;
+}
 
- margin: 0;
+/* Navigation Bar */
+nav {
+    background: #111827;
+    padding: 15px 0;
+    text-align: center;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+}
 
- padding: 0;
+nav a {
+    color: #f9fafb;
+    margin: 0 20px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
 
+nav a:hover, nav a.active {
+    color: #3b82f6;
+}
+
+/* Main container */
+.container {
+    max-width: 850px;
+    margin: 50px auto;
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    opacity: 0; /* for fade-in effect */
+    transition: opacity 0.6s ease-in-out;
+}
+
+/* Headings */
+h1, h2 {
+    color: #1f2937;
+    margin-bottom: 15px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 30px;
 }
 
 h2 {
-
- color: #4CAF50;
-
- font-family: Arial, sans-serif;
-
- font-size: 28px;
-
- border-bottom: 2px solid #4CAF50;
-
- padding-bottom: 5px;
-
+    font-size: 22px;
+    font-weight: 600;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #e5e7eb;
+    padding-bottom: 5px;
 }
 
-h3 {
-
- color: #2196F3;
-
- font-family: 'Courier New', Courier, monospace;
-
- font-size: 24px;
-
- margin-bottom: 10px;
-
+/* Paragraphs */
+p {
+    margin-bottom: 15px;
+    font-size: 16px;
 }
 
-p.highlight {
-
- background-color: #ffeb3b;
-
- font-weight: bold;
-
- padding: 10px;
-
- border: 1px dashed #ff9800;
-
+/* Profile Image */
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    display: block;
+    margin: 20px auto;
+    object-fit: cover;
+    border: 4px solid #3b82f6;
+    transition: transform 0.3s ease;
 }
 
-div#container {
-
- background-color: #e0f7fa;
-
- padding: 20px;
-
- border: 2px solid #00acc1;
-
+.profile-img:hover {
+    transform: scale(1.05);
 }
 
-a[target="_blank"] {
-
- color: #e91e63;
-
- text-decoration: none;
-
- font-weight: bold;
-
+/* Table for Bio-data */
+.biodata-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 25px;
 }
 
-a[target="_blank"]:hover {
-
- text-decoration: underline;
-
+.biodata-table th, .biodata-table td {
+    padding: 14px 15px;
+    border-bottom: 1px solid #e5e7eb;
+    text-align: left;
+    font-size: 16px;
 }
 
-div p {
-
- color: #616161;
-
- font-size: 16px;
-
+.biodata-table th {
+    width: 35%;
+    font-weight: 600;
+    background-color: #f9fafb;
+    color: #1f2937;
 }
 
-div > span {
-
- color: #009688;
-
- font-style: italic;
-
- font-size: 18px;
-
+.biodata-table tr:hover {
+    background-color: #f3f4f6;
 }
 
-h2 + hr {
-
- border: 0;
-
- height: 1px;
-
- background-color: #4CAF50;
-
- margin: 10px 0;
-
+/* Lists */
+ul {
+    margin-left: 25px;
+    list-style: disc;
 }
 
-h3 ~ p {
-
- font-family: 'Georgia', serif;
-
- color: #555;
-
+ul li {
+    margin-bottom: 10px;
 }
 
-time, img, span {
-
- display: block;
-
- margin: 15px 0;
-
+/* Contact */
+section p:last-child {
+    font-weight: 600;
 }
 
-a:hover {
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        margin: 20px;
+        padding: 25px;
+    }
 
- color: #9c27b0;
+    h1 {
+        font-size: 28px;
+    }
 
- text-decoration: underline;
-
+    h2 {
+        font-size: 20px;
+    }
 }
 
-p::first-line {
+@media (max-width: 480px) {
+    nav a {
+        display: block;
+        margin: 10px 0;
+    }
 
- font-weight: bold;
-
- color: #d32f2f;
-
+    .profile-img {
+        width: 120px;
+        height: 120px;
+    }
 }
-
-
-
-
-
