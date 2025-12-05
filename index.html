@@ -1,14 +1,24 @@
-<!doctype html>
-<html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Registration — Assignment 2</title>
   <title>Maithri Shetty — Resume</title>
 
+  <!-- styles -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- jQuery (used for simplicity) -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="script.js" defer></script>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="resume.css">
 </head>
 <body>
+  <main class="page">
+    <section class="hero">
+      <div class="hero-inner">
+        <h1>Online Registration</h1>
+        <p>Fill the form below to register. Data is saved to the database and displayed on success.</p>
 
 <header class="hero">
   <div class="hero-inner container">
@@ -36,7 +46,50 @@
           </a>
           <a class="btn-soft" href="about.html">Bio-data</a>
         </div>
-      </div>
+</div>
+      <div class="hero-decor" aria-hidden="true"></div>
+    </section>
+
+    <section class="content">
+      <form id="regForm" class="form card" autocomplete="off" novalidate>
+        <div class="form-grid">
+          <label class="field">
+            <input name="name" id="name" type="text" required maxlength="150" />
+            <span class="label">Full name</span>
+            <span class="hint">e.g. Alice</span>
+          </label>
+
+          <label class="field">
+            <input name="email" id="email" type="email" required maxlength="200" />
+            <span class="label">Email</span>
+            <span class="hint">we'll never share your email</span>
+          </label>
+
+          <label class="field">
+            <input name="phone" id="phone" type="tel" required maxlength="30" />
+            <span class="label">Phone</span>
+            <span class="hint">mobile or landline</span>
+          </label>
+
+          <label class="field select">
+            <select name="gender" id="gender">
+              <option value="">Select gender</option>
+              <option>Female</option>
+              <option>Male</option>
+              <option>Other</option>
+            </select>
+            <span class="label">Gender</span>
+          </label>
+
+          <label class="field">
+            <input name="course" id="course" type="text" maxlength="100" />
+            <span class="label">Course</span>
+            <span class="hint">e.g. CSE/ECE</span>
+          </label>
+
+          <div class="actions">
+            <button type="submit" id="submitBtn" class="btn primary">Submit</button>
+            <button type="reset" id="resetBtn" class="btn ghost">Reset</button>
     </div>
 
     <div class="hero-right">
@@ -66,10 +119,11 @@
 
           <div class="tag-skills">
             <span>Python</span><span>React</span><span>ML</span><span>Arduino</span>
-          </div>
+</div>
 
           <div class="availability">Available for internships • Open to part-time</div>
-        </div>
+</div>
+      </form>
       </div>
     </div>
 
@@ -107,9 +161,16 @@
   </section>
 </main>
 
+      <aside id="result" class="result"></aside>
+    </section>
 <footer class="footer container">
   © 2025 Maithri Shetty
 </footer>
 
+    <footer class="footer">
+      <small>Assignment 2 — Web Registration • Built with HTML, CSS, JavaScript, jQuery & PHP</small>
+    </footer>
+  </main>
 </body>
+</html>
 </html>
